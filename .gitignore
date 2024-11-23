@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CleanStay - خدمات التنظيف الاحترافية</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            direction: rtl;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        header {
+            background-color: #0078d7;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        header p {
+            margin: 5px 0;
+        }
+        nav {
+            text-align: center;
+            padding: 10px;
+            background-color: #0056a6;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            padding: 20px;
+        }
+        .service {
+            background-color: white;
+            margin: 20px 0;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .service h2 {
+            color: #0078d7;
+        }
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #0078d7;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CleanStay</h1>
+        <p>نظافة ترفع مستوى تجربتك السياحية!</p>
+    </header>
+    <nav>
+        <a href="#services">الخدمات</a>
+        <a href="#booking">الحجز</a>
+        <a href="#contact">اتصل بنا</a>
+    </nav>
+    <div class="container">
+        <section id="services">
+            <h2>خدماتنا</h2>
+            <div class="service">
+                <h3>التنظيف اليومي</h3>
+                <p>نظافة شاملة للمساحات، الشراشف، الزجاج، وأكثر. السعر: 50 درهم/ساعة.</p>
+            </div>
+            <div class="service">
+                <h3>التنظيف العميق</h3>
+                <p>تعقيم شامل مع تنظيف الأماكن التي يصعب الوصول إليها. السعر: 100 درهم/ساعة.</p>
+            </div>
+        </section>
+        <section id="booking">
+            <h2>احجز الآن</h2>
+            <form>
+                <label for="name">الاسم:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="phone">رقم الهاتف:</label><br>
+                <input type="tel" id="phone" name="phone" required><br><br>
+                <label for="address">عنوان العقار:</label><br>
+                <input type="text" id="address" name="address" required><br><br>
+                <label for="service">اختر الخدمة:</label><br>
+                <select id="service" name="service">
+                    <option value="daily">التنظيف اليومي</option>
+                    <option value="deep">التنظيف العميق</option>
+                </select><br><br>
+                <label for="date">التاريخ:</label><br>
+                <input type="date" id="date" name="date" required><br><br>
+                <button type="submit">احجز الآن</button>
+            </form>
+        </section>
+    </div>
+    <div class="footer">
+        <p>© 2024 CleanStay - جميع الحقوق محفوظة</p>
+    </div>
+</body>
+</html>
